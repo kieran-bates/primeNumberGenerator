@@ -27,6 +27,7 @@ public class JavaApplication2 {
         
         boolean trueFalse[] = new boolean[numberOfNumbers];
         int numbers[] = new int[numberOfNumbers];
+        int number  = 0;
         
         for(int i = 0; i<numberOfNumbers; i++)
         {
@@ -35,7 +36,31 @@ public class JavaApplication2 {
         
         for(int i = 0; i<numberOfNumbers; i++)
         {
-            
+            numbers[i] = number;
+            number = number+1;
+        }
+        
+        trueFalse[0] = false;
+        trueFalse[1] = false;
+        
+        int index = 2;
+        boolean repeat = true;
+        int additionFactor;
+        int lastNumber;
+        while(repeat == true)
+        {
+            if(trueFalse[index] == false)
+            {
+                index = index+1;
+            }
+            else
+            {
+                additionFactor = numbers[index];
+                lastNumber = numbers[index];
+                
+                lastNumber = lastNumber+additionFactor;
+                trueFalse[lastNumber] = false;
+            }
         }
     }
     
