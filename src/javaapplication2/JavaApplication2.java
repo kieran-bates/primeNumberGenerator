@@ -57,9 +57,22 @@ public class JavaApplication2 {
             {
                 additionFactor = numbers[index];
                 lastNumber = numbers[index];
+                boolean exit = false;
                 
-                lastNumber = lastNumber+additionFactor;
-                trueFalse[lastNumber] = false;
+                while (exit == false)
+                {
+                    try
+                    {
+                        lastNumber = lastNumber+additionFactor;
+                        trueFalse[lastNumber] = false;
+                        exit = false;
+                    }
+                    catch(Exception e)
+                    {
+                        exit = true;
+                    }
+                }
+                
             }
         }
     }
