@@ -168,10 +168,10 @@ public class JavaApplication2 {
         
         boolean repeat = true;
         
-        while (repeat == true);
-        {
         Scanner input = new Scanner(System.in);
         
+        while (repeat == true);
+        {
         System.out.println("***NUMBER CALCULATOR***");
         System.out.println("\n1... Prime number generator");
         System.out.println("\n2... Factorial number generator");
