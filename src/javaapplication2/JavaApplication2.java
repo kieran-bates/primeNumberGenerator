@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Kieran Bates
+ * January 25, 2020
+ * This program generates prime, factorial and fibonacci numbers based on conditions set by the user
  */
 
 package javaapplication2;
@@ -15,6 +15,10 @@ public class JavaApplication2 {
 
     /**
      * @param args the command line arguments
+     */
+    
+    /**
+     * Generate the factorial of a user specified number
      */
     public static void factorialNumberGenerator()
     {
@@ -32,6 +36,9 @@ public class JavaApplication2 {
         System.out.println("\nfactorial = "+output);
     }
     
+    /**
+     * Generate numbers in the fibonacci sequence
+     */
     public static void fibonacciNumberGenerator()
     {
         Scanner input = new Scanner(System.in);
@@ -62,6 +69,10 @@ public class JavaApplication2 {
             System.out.println("factorial term = "+sequence[length-1]);
         }
     }
+    
+    /**
+     * Find the prime numbers in a set of numbers of a user specified length
+     */
     public static void primeNumberGenerator() {
         
         Scanner input = new Scanner(System.in);
